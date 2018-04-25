@@ -3,7 +3,7 @@ package com.udacity.sandwichclub.model;
 import java.util.List;
 
 public class Sandwich {
-    private Name name;
+    private Name name = new Name();
     private String placeOfOrigin;
     private String description;
     private String image;
@@ -23,22 +23,13 @@ public class Sandwich {
         this.ingredients = ingredients;
     }
 
-    public String getMainName() {
-        return name.getMainName();
-    }
+    public String getMainName() { return name.getMainName(); }
 
-    public void setMainName(String mainName) {
-        this.name.setMainName(mainName);
-    }
+    public void setMainName(String mainName) { this.name.setMainName(mainName); }
 
-    public List<String> getAlsoKnownAs() {
-        return name.getAlsoKnownAs();
-    }
+    public List<String> getAlsoKnownAs() { return name.getAlsoKnownAs(); }
 
-    public void setAlsoKnownAs(List<String> alsoKnownAs) {
-        this.name.setAlsoKnownAs(alsoKnownAs);
-    }
-
+    public void setAlsoKnownAs(List<String> alsoKnownAs) { this.name.setAlsoKnownAs(alsoKnownAs); }
 
     public String getPlaceOfOrigin() {
         return placeOfOrigin;
